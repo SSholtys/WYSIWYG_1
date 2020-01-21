@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lesson_23</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div id="main_block" class="area_block">
+            <p>Lorem, ipsum dolor sit amet adipisicing elit. Dolor, id!</p>
+            <p>Lorem, ipsum dolor sit amet adipisicing elit. Dolor, id!</p>
+            <p>Lorem, ipsum dolor sit amet adipisicing elit. Dolor, id!</p>
+            <p>Lorem, ipsum dolor sit amet adipisicing elit. Dolor, id!</p>
+            <p>Lorem, ipsum dolor sit amet adipisicing elit. Dolor, id!</p>
+        </div>
+        <br>
+
+        <div class="btns">
+            <button id="btnEdit" class="btn btn_edit">edit</button>
+            <button id="btnStyle" class="btn btn_style">style</button>
+        </div>
+
+        <div class="area_block area_block__settings">
+            <div id="textMenu" class="text_menu">
+                <textarea id="area" class="area"></textarea>
+                <div class="btns btns_2">
+                    <button id="btnAdd" class="btn btn_add">add</button>
+                    <button id="btnSave" class="btn btn_save">save</button>
+                </div>
+            </div>
+
+
+
+            <div id="setsMenu" class="sets_menu">
+                <div id="stylesMenu" class="styles_menu">
+                    <p>Font size:</p>
+                    <!-- <br> -->
+                    <input type="radio" name="fontSize" value="12px" id="fontSize12"> 12 px
+                    <input type="radio" name="fontSize" value="14px" id="fontSize14"> 14 px
+                    <input type="radio" name="fontSize" value="16px" id="fontSize16"> 16 px
+                    <input type="radio" name="fontSize" value="18px" id="fontSize18"> 18 px
+                    <input type="radio" name="fontSize" value="20px" id="fontSize20"> 20 px
+                    <br>
+                    <p>Font family:</p>
+                    <!-- <br> -->
+                    <select name="" id="fontFamilySelector">
+                <option disabled>Choose option</option>
+                <option value="cursive">cursive</option>
+                <option selected value="fantasy">fantasy</option>
+                <option value="monospace">monospace</option>
+                <option value="sans-serif">sans-serif</option>
+            </select>
+                    <br>
+                    <p>Colors:</p>
+                    <div class="btns btns_colors">
+                        <button id="btnColorOfText" class="btn btn_color_set">Color of Text</button>
+                        <button id="btnColorOfBg" class="btn btn_color_set">Background Color</button>
+                    </div>
+                    <div class="text_style">
+                        <p>Style:</p>
+                        <input class="style_set" type="checkbox" name="" id="boldText">Bold text
+                        <input class="style_set" type="checkbox" name="" id="cursiveText">Cursive text
+                    </div>
+                </div>
+
+                <div id="colorsBox" class="colors_box">
+                    <div id="colorsPopup" class="colors_block">
+                        <button id="js-color" class="clr" style="background-color: red;"></button>
+                        <button id="js-color" class="clr" style="background-color: blue;"></button>
+                        <button id="js-color" class="clr" style="background-color: green;"></button>
+                        <button id="js-color" class="clr" style="background-color: black;"></button>
+                        <button id="js-color" class="clr" style="background-color: yellow;"></button>
+                        <button id="js-color" class="clr" style="background-color: palevioletred;"></button>
+                        <button id="js-color" class="clr" style="background-color: white;"></button>
+                        <button id="js-color" class="clr" style="background-color: purple;"></button>
+                        <button id="js-color" class="clr" style="background-color: sienna;"></button>
+                    </div>
+                </div>
+            </div>
+            <h3 class="choose__title">Choose what You want</h3>
+            <div id="choose" class="choose">
+                <input type="radio" name="choice" id="table" value="table"> Table
+                <input type="radio" name="choice" id="list" value="list"> List
+            </div>
+            <div id="addElement" class="add_element">
+
+                <div id="addTable" class="add__table">
+
+                    <div class="add__table-title">Count TR: <input class="add__table-input" type="text" name="rows" id="tablerow" placeholder="Count TR:"></div> <br>
+
+                    <div class="add__table-title">Count TD: <input class="add__table-input" type="text" name="cols" id="tablecols" placeholder="Count TD:"></div>
+
+                    <div class="add__style-to-table">Add style to your table: <br><br>
+                        <div class="add__table-title">Width of TD: <input class="add__table-input" type="text" name="rows" id="tdWidth" placeholder="Width of TD:"></div> <br>
+
+                        <div class="add__table-title">Height of TD: <input class="add__table-input" type="text" name="rows" id="tdHeight" placeholder="Height of TD:"></div> <br>
+
+                        <span>Width of border:</span><input type="text" class="td__border" id="borderWidth" placeholder="Width:">
+
+                        <span>Type of border:</span><select name="tableborder" id="borderType">
+        
+                            <option value="solid">solid</option>
+                            <option value="dashed">dashed</option>
+                            <option value="dotted">dotted</option>
+        
+                        </select>
+
+                        <span>Color of border:</span><select name="tableborder" id="borderColor">
+        
+                            <option value="black">black</option>
+                            <option value="red">red</option>
+                            <option value="blue">blue</option>
+                            <option value="green">green</option>
+        
+                        </select> <br><br>
+
+                        <button class="add__table-btn" id="createTableBtn">Create table</button>
+
+                    </div>
+
+                </div>
+                <div class="add__list">
+
+                    <div class="add__list-title">Count Li: <input class="add__list-item" type="text" name="li" id="listItem" placeholder="Count Li:"></div> <br>
+
+                    <div class="add__list-title">Type of marks:
+
+                        <select class="typeofmarks" name="marks" id="listType">
+        
+                            <option value="circle">circle</option>
+                            <option value="armenian">armenian</option>
+                            <option value="square">square</option>
+                            <option value="decimal">decimal</option>
+        
+        
+                        </select>
+
+                    </div> <br>
+
+                    <button class="add__list-btn" id="addlistbtn">Create list</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        let btnEdit = document.getElementById('btnEdit'),
+            btnStyle = document.getElementById('btnStyle'),
+            btnAdd = document.getElementById('btnAdd'),
+            btnSave = document.getElementById('btnSave'),
+            mainBlock = document.getElementById('main_block'),
+            area = document.getElementById('area'),
+            textMenu = document.getElementById('textMenu'),
+            stylesMenu = document.getElementById('stylesMenu'),
+            fSize = document.querySelectorAll('[name="fontSize"]'),
+            fFSelector = document.getElementById('fontFamilySelector'),
+            btnColorOfText = document.getElementById('btnColorOfText'),
+            btnColorOfBg = document.getElementById('btnColorOfBg'),
+            colorsPopup = document.getElementById('colorsPopup'),
+            boldText = document.getElementById('boldText'),
+            colorsBox = document.getElementById('colorsBox'),
+            cursiveText = document.getElementById('cursiveText'),
+            choose = document.getElementById('choose'),
+            addElement = document.getElementById('addElement'),
+            table = document.getElementById('table'),
+            list = document.getElementById('list'),
+            addTable = document.getElementById('addTable'),
+            createTableBtn = document.getElementById('createTableBtn'),
+            choice = document.getElementsByName('choice');
+
+
+        btnEdit.addEventListener('click', function() {
+            area.value = mainBlock.innerHTML;
+            // area.value = content;
+            stylesMenu.style.display = 'none';
+            textMenu.style.display = 'initial'
+        })
+        btnSave.addEventListener('click', function() {
+            const content = area.value;
+            mainBlock.innerHTML = content;
+            area.value = '';
+        })
+
+        btnStyle.addEventListener('click', function() {
+            stylesMenu.style.display = 'initial';
+            setsMenu.style.display = 'initial'
+            textMenu.style.display = 'none';
+
+        })
+        btnAdd.addEventListener('click', function() {
+            choose.style.display = 'initial';
+            document.querySelector('.choose__title').style.display = 'initial';
+            textMenu.style.display = 'none';
+            mainBlock.style.display = 'none';
+            btnEdit.style.display = 'none';
+            btnStyle.style.display = 'none';
+
+        })
+
+
+        choose.addEventListener('click', checkElement);
+
+        function checkElement() {
+            let check = document.getElementsByName('choice');
+            for (let i = 0; i < check.length; i++) {
+                if (check[i].checked && check[i].value === 'table') {
+                    addElement.style.display = 'block';
+                    document.querySelector('.add__table').style.display = 'block';
+                    document.querySelector('.add__list').style.display = 'none';
+
+                    let elem = document.querySelector('.add__table'),
+                        cols = document.querySelector('#tablecols').value,
+                        rows = document.querySelector('#tablerow').value,
+                        tdWidth = document.querySelector('#tdWidth').value,
+                        tdHeight = document.querySelector('#tdHeight').value,
+                        borderWidth = document.querySelector('#borderWidth').value,
+                        borderType = document.querySelector('#borderType').value,
+                        borderColor = document.querySelector('#borderColor').value;
+
+                    createTableBtn.addEventListener('click', createTable);
+
+                    // createTable(elem, cols, rows);
+
+                    function createTable(parent) {
+                        let table = document.createElement('table');
+                        let cols = document.querySelector('#tablecols').value,
+                            rows = document.querySelector('#tablerow').value;
+
+
+                        for (let i = 0; i < rows; i++) {
+                            let tr = document.createElement('tr');
+                            for (let j = 0; j < cols; j++) {
+                                let td = document.createElement('td');
+                                tr.appendChild(td);
+                            }
+                            table.appendChild(tr);
+                            tr.innerText = i;
+                        }
+
+                        area.value += table.outerHTML;
+
+
+
+
+                        // addElement.style.display = 'none';
+                        // document.querySelector('.add__table').style.display = 'none';
+                        // document.querySelector('.add__list').style.display = 'block';
+                    }
+                    // createTable(5, 5);
+
+
+
+
+                }
+                if (check[i].checked && check[i].value === 'list') {
+                    addElement.style.display = 'block';
+                    document.querySelector('.add__list').style.display = 'block';
+                    document.querySelector('.add__table').style.display = 'none';
+                }
+            }
+        }
+
+        // table.addEventListener('checked', function() {
+        //     if (table.checked) {
+        //         addElement.style.display = 'initial';
+        //     } else;
+        // })
+
+        for (let i = 0; i < fSize.length; i++) {
+            fSize[i].addEventListener('change', function() {
+                if (fSize[i].checked) {
+                    mainBlock.style.fontSize = fSize[i].value;
+                }
+            })
+        }
+
+        fFSelector.addEventListener('change', e => {
+            const fFamily = e.target;
+            mainBlock.style.fontFamily = fFamily.value;
+        })
+
+        btnColorOfText.addEventListener('click', function() {
+            colorsBox.style.display = 'initial';
+            colorsPopup.style.visibility = 'visible';
+            colorInject = 'color';
+
+        })
+        btnColorOfBg.addEventListener('click', function() {
+            colorsPopup.style.visibility = 'visible';
+            colorInject = 'backgroundColor';
+
+        })
+
+        document.addEventListener('click', (e) => {
+            const target = e.target;
+            if (target.classList.contains('clr')) {
+                const color = getComputedStyle(target).backgroundColor;
+                mainBlock.style[colorInject] = color;
+                colorsPopup.style.visibility = 'hidden';
+            }
+        });
+
+        boldText.addEventListener('change', function() {
+            if (boldText.checked) {
+                mainBlock.style.fontWeight = 'bold';
+            } else {
+                mainBlock.style.fontWeight = '';
+            }
+
+
+        })
+        cursiveText.addEventListener('change', function() {
+            if (cursiveText.checked) {
+                mainBlock.style.fontStyle = 'italic';
+            } else {
+                mainBlock.style.fontStyle = '';
+            }
+        })
+    </script>
+
+
+
+</body>
+
+</html>

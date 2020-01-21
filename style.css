@@ -1,0 +1,153 @@
+.container {
+    margin: 0 auto;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main_block {
+    margin: 0 auto;
+    padding: 20px;
+    width: 100%;
+    background-color: rgb(212, 212, 212);
+}
+
+.btn {
+    width: 80px;
+    height: 35px;
+    margin-right: 20px;
+    border-radius: 4px;
+}
+
+.btn_edit {
+    background-color: yellow;
+    color: black;
+}
+
+.btn_style {
+    background-color: rgb(64, 64, 252);
+    color: white;
+}
+
+.btn_add {
+    background-color: red;
+    color: white;
+}
+
+.btn_save {
+    background-color: green;
+    color: white;
+}
+
+.btn_color_set {
+    min-width: 150px;
+    background-color: rgb(94, 94, 94);
+    color: white;
+}
+
+.btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btns_colors {
+    justify-content: flex-start;
+}
+
+.btns_2 {
+    margin-top: 15px;
+    justify-content: flex-start;
+}
+
+.area_block {
+    width: 80%;
+    height: auto;
+    padding: 20px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(212, 212, 212);
+    border-radius: 6px;
+}
+
+.area_block__settings>b {
+    font-size: 80px;
+    font-weight: 700;
+    position: relative;
+}
+
+.area {
+    width: 100%;
+    height: 200px;
+}
+
+.text_menu {
+    display: initial;
+}
+
+.sets_menu {
+    display: none;
+    /* flex-direction: row; */
+    width: 100%;
+    position: relative;
+}
+
+.styles_menu {
+    width: 50%;
+    display: none;
+    position: relative;
+}
+
+.text_style {}
+
+.colors_box {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.colors_block {
+    width: 100%;
+    height: 100%;
+    margin-top: 10%;
+    margin-left: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 200px;
+    visibility: hidden;
+}
+
+.clr {
+    width: calc(100%*1/3);
+    height: calc(100%*1/3);
+}
+
+.choose__title {
+    display: none;
+}
+
+.choose {
+    width: 100%;
+    /* height: 300px; */
+    display: none;
+}
+
+.add_element {
+    width: 100%;
+    height: 300px;
+    /* display: none; */
+}
+
+.add__table,
+.add__list {
+    display: none;
+    margin-top: 10px;
+}
